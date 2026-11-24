@@ -18,9 +18,9 @@ llega más sangre y menos luz: $R_{LDR}$ sube y $V_s$ sube unos milivoltios.
 <p align="center"><img src="docs/circuitos/sensor.png" alt="Esquema del sensor: LED con resistencia de 100 ohmios y divisor de 3,9 kΩ con la LDR" width="560"></p>
 
 **Amplificador.** Dos etapas con un TL082 a ±12 V. Cada una quita la continua (paso alto
-de 0,34 Hz) y amplifica; la primera además filtra por encima de ~11 Hz. Ganancia total 68,5:
+de 0,34 Hz) y amplifica; la primera además filtra por encima de ≈11 Hz. Ganancia total 68,5:
 el pulso pasa de milivoltios a 1,5-2 V. A la salida, el divisor de 100 kΩ centra la señal en el
-rango del ADC, $D_1$-$D_2$ protegen A0 y $R_o$-$C_o$ es el antialiasing.
+rango del ADC, $D_1$ y $D_2$ protegen A0 y $R_o$ con $C_o$ forman el antialiasing.
 
 <p align="center"><img src="docs/circuitos/amplificador.png" alt="Esquema del amplificador de dos etapas con TL082, desplazamiento de nivel y protección de A0" width="100%"></p>
 
