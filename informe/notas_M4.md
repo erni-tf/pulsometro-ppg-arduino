@@ -2,7 +2,7 @@
 
 Código: `pc/visor.py`. Captura: `figuras/m4_visor.png`.
 
-```
+```sh
 .venv/bin/python visor.py [puerto]                       # con el Nano
 .venv/bin/python visor.py --reproducir ../datos/x.csv    # reproduce x.csv + x_latidos.csv
 ```
@@ -23,11 +23,11 @@ Código: `pc/visor.py`. Captura: `figuras/m4_visor.png`.
 | Versión | fps | Causa |
 |---|---|---|
 | Redibujo completo de la figura en cada frame | 6 | matplotlib recalcula ejes, marcas y textos en cada frame |
-| Blitting, `after(50)` fijo | 15-17 | el periodo real era 50 ms + lo que tarda el frame (~13 ms) |
+| Blitting, `after(50)` fijo | 15-17 | el periodo real era 50 ms + lo que tarda el frame (≈13 ms) |
 | Blitting y periodo de 40 ms descontando el frame | **21-25** | |
 
 - **Blitting:** los ejes están en tiempo relativo (0 = ahora), así que no cambian en cada frame. Se guarda el fondo (ejes, rejilla, etiquetas) y solo se redibujan las curvas encima. El fondo se rehace solo si cambia la escala vertical, que tiene histéresis: unas 13 veces en 20 s.
-- Coste por frame: ~12 ms.
+- Coste por frame: ≈12 ms.
 - Medido con el PC cargado (load average 5,4 en 8 núcleos, por otros procesos).
 - Prueba de estrés: reproducción a 5× (500 líneas/s): 25 fps y retraso estable de 1-4 ms.
 - Retraso acumulado = (reloj del PC - reloj del Nano) - el mínimo observado. Si el PC no diese abasto, crecería sin parar.

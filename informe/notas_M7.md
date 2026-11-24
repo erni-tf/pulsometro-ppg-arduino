@@ -39,7 +39,7 @@ Figura `figuras/m7_protocolo_sintetico.png`.
 
 **Regla del plan (estrés = RMSSD ≤ 0,7 RMSSD0 y HR ≥ HR0 + 10): no detecta el estrés.**
 - Protocolo de 3 × 2 min (`sesion_20261123_125241`) y restas de 7 en silencio (`sesion_20261123_130304`): el pulso sube 12-18 BPM, pero el RMSSD se queda en 25-32 ms, nunca por debajo de 17,5 ms.
-- Primero parecía que el RMSSD subía mucho (52-67 ms) con el estrés. Era un error de medida: a ~100 BPM la onda dícrota se junta con el pico y su instante "baila". Se cambió el detector para marcar el latido por la máxima pendiente (ver notas_M5). Con el pico, 47-52 ms; con la pendiente, 25-32 ms. En reposo ambos coinciden.
+- Primero parecía que el RMSSD subía mucho (52-67 ms) con el estrés. Era un error de medida: a ≈100 BPM la onda dícrota se junta con el pico y su instante "baila". Se cambió el detector para marcar el latido por la máxima pendiente (ver notas_M5). Con el pico, 47-52 ms; con la pendiente, 25-32 ms. En reposo ambos coinciden.
 - Hacer las restas "en voz baja" también sube el RMSSD: hablar cambia la respiración.
 
 **Regla nueva:** estrés si HR ≥ HR0 + 10 y RMSSD ≤ 1,15 RMSSD0 (pulso alto sin aumento de la HRV), o HR ≥ HR0 + 15, o RMSSD ≤ 0,5 RMSSD0. Simulada sobre las grabaciones: detecta el estrés en las dos pruebas de restas. En el protocolo sintético, estrés a los 167,5 s (antes, 174,1 s).
@@ -54,7 +54,7 @@ Figura `figuras/m7_protocolo_sintetico.png`.
 
 **Limitaciones observadas:**
 - El pulso en reposo varió entre 75 y 92 BPM durante la sesión: con HR0 + 10 hay alguna falsa alarma (por ejemplo, a los 62 s de `sesion_20261123_131912`).
-- Con la respiración lenta (6 por minuto) el RMSSD casi no sube: la oscilación de los RR es lenta (±60 ms cada ~10 latidos) y el RMSSD solo ve diferencias entre latidos seguidos. El SDNN o la amplitud de la oscilación la recogerían mejor. Posible mejora.
+- Con la respiración lenta (6 por minuto) el RMSSD casi no sube: la oscilación de los RR es lenta (±60 ms cada ≈10 latidos) y el RMSSD solo ve diferencias entre latidos seguidos. El SDNN o la amplitud de la oscilación la recogerían mejor. Posible mejora.
 - Indicador orientativo, no clínico; así debe presentarse.
 
 ## Visor
@@ -70,11 +70,11 @@ Figura `figuras/m7_protocolo_sintetico.png`.
 | Fase | Pulso (BPM) | RMSSD (ms) | Estado |
 |---|---|---|---|
 | Reposo | 86-103 | 15-29 | normal |
-| Prensión | sube a 112-121 | 28-44 | estrés a los ~3 s de pasar HR0 + 15 |
+| Prensión | sube a 112-121 | 28-44 | estrés a los ≈3 s de pasar HR0 + 15 |
 | Al soltar | 92-102 | 24-40 | estrés unos 25 s más (histéresis y medias), luego normal |
 | Relajación | 84-97 | 30-40, hasta 60 | relajado (RMSSD ≥ 1,15 RMSSD0 = 32) |
 
-  Secuencia limpia normal → estrés → normal → relajado. Con la línea base del día anterior (HR0 82,8) el reposo de hoy (88-97) rozaba el umbral de estrés: hay que calibrar en cada sesión o con cada persona.
+Secuencia limpia normal → estrés → normal → relajado. Con la línea base del día anterior (HR0 82,8) el reposo de hoy (88-97) rozaba el umbral de estrés: hay que calibrar en cada sesión o con cada persona.
 
 ## Segunda persona (2026-11-24, `sesion_20261124_130053`, sin vídeo)
 - Calibración: HR0 = 65,9 BPM, RMSSD0 = 69,2 ms (frente a 91,0 y 27,8 del primero): la línea base personal es imprescindible, con umbrales absolutos uno saldría siempre "estrés" y el otro siempre "relajado".
