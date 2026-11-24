@@ -1,0 +1,2 @@
+-I../firmware/pulso
+-std=c++17

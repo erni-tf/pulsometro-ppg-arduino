@@ -1,0 +1,33 @@
+# Entornos y cachés
+.venv/
+__pycache__/
+*.pyc
+
+# Compilados
+pc/test_detector
+*.o
+
+# LaTeX (se versionan .tex y .pdf)
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# Datos: solo las grabaciones de ejemplo que usan el README y las figuras.
+# perfiles.json tiene nombres de personas y no se publica.
+datos/*
+!datos/m1_divisor_sin_amplificar.csv
+!datos/m2_amplificado_g1.csv
+!datos/m2_amplificado_g68.csv
+!datos/sesion_20261123_130304*.csv
+!datos/sesion_20261123_133600*.csv
+!datos/sesion_20261124_125442*.csv
+
+# Material que no es del proyecto o no se publica
+Propuestas_de_trabajos_SD.pdf
+referencias/
+entrega/
+videos/
